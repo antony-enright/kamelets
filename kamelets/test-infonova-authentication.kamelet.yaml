@@ -99,7 +99,3 @@ spec:
       - toD: "https://{{infonova.basepath}}/r6-api/{{infonova.tenant}}{{uri}}"
       - log:
           message: The body is ${dollar}{body}
-      - unmarshal:
-          json:
-             library: jackson
-             unmarshalType: java.util.Map
